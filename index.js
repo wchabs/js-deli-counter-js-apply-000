@@ -1,9 +1,13 @@
 //var katzDeli = [];
+var servingCounter = 0;
 
-function takeANumber(katzDeliLine, name){
-  katzDeliLine.push(name);
-  var tempLineNum = katzDeliLine.indexOf(name, 0) + 1;
-  return "Welcome, " + name + ". You are number " + tempLineNum + " in line.";
+function takeANumber(katzDeliLine){
+  //katzDeliLine.push(name);
+  //var tempLineNum = katzDeliLine.indexOf(name, 0) + 1;
+  
+  servingCounter++;
+  katzDeliLine.push(servingCounter);
+  return "Welcome, you are number " + servingCounter + ".";
 }
 
 function nowServing(katzDeliLine){
