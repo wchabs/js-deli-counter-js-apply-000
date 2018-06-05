@@ -5,6 +5,8 @@ function takeANumber(katzDeliLine){
   //katzDeliLine.push(name);
   //var tempLineNum = katzDeliLine.indexOf(name, 0) + 1;
   
+  //CODE HAS CHANGED DURING TECHNICAL INTERVIEW ON 05JUNE2018 1040-11AM;
+  
   servingCounter++;
   katzDeliLine.push(servingCounter);
   return "Welcome, you are number " + servingCounter + ".";
